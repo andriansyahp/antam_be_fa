@@ -1,0 +1,7 @@
+fastapi
+pywhatkit
+pydantic
+pandas
+uvicorn
+gunicorn
+python-multipart
