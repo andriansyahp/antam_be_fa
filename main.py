@@ -50,8 +50,8 @@ async def create_upload_file(file: UploadFile = File(...)):
     options = Options()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
     options.add_argument("--profile-directory=Default")
-    # driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     # driver = webdriver.Chrome(ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install(), options=options)
     delay = 30
     driver.get('https://web.whatsapp.com')
