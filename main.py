@@ -9,6 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.utils import ChromeType
 from time import sleep
 from urllib.parse import quote
 from io import BytesIO
@@ -47,7 +48,8 @@ async def create_upload_file(file: UploadFile = File(...)):
     options = Options()
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
     options.add_argument("--profile-directory=Default")
-    driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    # driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
+    driver = webdriver.Chrome(ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install(), options=options)
     delay = 30
     driver.get('https://web.whatsapp.com')
     
