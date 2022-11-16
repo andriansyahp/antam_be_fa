@@ -13,9 +13,9 @@ import pandas as pd
 # from urllib.parse import quote
 from io import BytesIO
 import pywhatkit as kit 
-import os
+# import os
 
-os.environ['DISPLAY'] = ':0'
+# os.environ['DISPLAY'] = ':0'
 
 app = FastAPI()
 origins = ["*"]
