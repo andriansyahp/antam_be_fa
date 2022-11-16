@@ -6,3 +6,4 @@ pandas
 uvicorn
 gunicorn
 python-multipart
+openpyl
