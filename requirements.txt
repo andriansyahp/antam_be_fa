@@ -1,6 +1,6 @@
 fastapi
-selenium
-webdriver-manager
+selenium==4
+webdriver-manager==3.5.4
 pydantic
 pandas
 uvicorn
